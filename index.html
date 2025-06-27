@@ -1,18 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CS-499 ePortfolio - Julia Coronado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f8f9fa;
     }
 
     header {
-      background: linear-gradient(to right, #0f73a9, #1ac168);
+      background: linear-gradient(to right, #6a11cb, #2575fc);
       color: white;
       text-align: center;
       padding: 80px 20px 40px;
@@ -20,27 +23,72 @@
 
     h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
     }
 
     main {
       padding: 40px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
     h2 {
-      color: #228B22;
+      color: #343a40;
+      border-bottom: 2px solid #6a11cb;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      color: #495057;
     }
 
     p {
-      line-height: 1.6;
+      line-height: 1.7;
+      color: #212529;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     .video-section iframe {
       width: 100%;
       height: 400px;
       border: none;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 15px 25px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin: 8px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2575fc;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -51,29 +99,45 @@
   </header>
   <main>
     <h2>Introduction</h2>
-    <p>My name is Julia Coronado, and I started attending SNHU’s computer science program in 2020. This GitHub Pages site will display the work that I have completed during the program along with enhancements made to my final project.</p>
+    <div class="card">
+      <p>My name is Julia Coronado, and I started attending SNHU’s computer science program in 2020. This GitHub Pages site will display the work that I have completed during the program along with enhancements made to my final project.</p>
+    </div>
 
-    <h2>Education Review</h2>
-    <p>Completing my coursework for this degree helped me understand the importance of refining and polishing code in a professional manner. Through this process, I improved my ability to design structured, efficient, and scalable software applications. I also learned the value of version control, collaborative coding practices, and performance-focused enhancement strategies.</p>
+    <h2>Navigation</h2>
+    <nav>
+      <ul>
+        <li><a href="#design-enhancement">🎯 Software Design and Engineering Enhancement</a></li>
+        <li><a href="#algo-enhancement">⚙️ Algorithms and Data Structures Enhancement</a></li>
+        <li><a href="#db-enhancement">🗄️ Database Enhancement</a></li>
+        <li><a href="#video">📹 Enhancement Video Presentation</a></li>
+      </ul>
+    </nav>
 
     <h2>Enhancements Narrative</h2>
 
-    <h3>Software Design and Engineering Enhancement</h3>
-    <p>To improve the structure and maintainability of my food inventory application, I applied software design and engineering principles to refactor and organize the codebase. I implemented the Model-View-Controller (MVC) architecture, separated responsibilities across components, and created reusable utility classes. This enhanced the clarity and scalability of the application, making it easier to maintain and expand.</p>
-
-    <h3>Algorithms and Data Structures Enhancement</h3>
-    <p>I optimized the data retrieval and filtering logic in the application by applying efficient algorithms. I introduced a HashMap for fast item lookup and improved the expiration check process using pre-sorted data and targeted comparisons. These changes significantly reduced processing time and improved user experience.</p>
-
-    <h3>Database Enhancement</h3>
-    <p>I redesigned the SQLite database schema by normalizing the structure and introducing foreign key constraints. This improved data integrity and eliminated redundancy. Separate tables for categories and units were created and linked via foreign keys, resulting in cleaner data management and faster queries.</p>
-
-    <h2>Enhancement Video Presentation</h2>
-    <p>The video below walks through my enhancement process in detail. It explains the technical improvements I made and how they contribute to a better user experience.</p>
-    <div class="video-section">
-      <!-- Replace the URL below with your actual YouTube video link -->
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" allowfullscreen></iframe>
+    <div class="card" id="design-enhancement">
+      <h3>🎯 Software Design and Engineering Enhancement</h3>
+      <p>To improve the structure and maintainability of my food inventory application, I applied software design and engineering principles to refactor and organize the codebase. Initially, much of the business logic, UI interaction, and data handling were all contained within a single activity, leading to tightly coupled and hard-to-maintain code. I redesigned the project using the Model-View-Controller (MVC) architecture, separating data handling from the user interface and core logic. I also creat...
     </div>
 
+    <div class="card" id="algo-enhancement">
+      <h3>⚙️ Algorithms and Data Structures Enhancement</h3>
+      <p>The original application used simple, linear search techniques to filter and sort inventory items. As the dataset grew, performance issues began to emerge. To address this, I optimized the expiration check algorithm by pre-sorting inventory data by date and applying a sliding window filter to focus only on soon-to-expire items. I also introduced a HashMap to categorize and retrieve items more efficiently based on their properties, allowing for constant-time access. These enhancements reduced th...
+    </div>
+
+    <div class="card" id="db-enhancement">
+      <h3>🗄️ Database Enhancement</h3>
+      <p>To strengthen the application’s data layer, I redesigned the SQLite database schema for better normalization and scalability. The original design stored category and unit data directly in the items table, which risked data redundancy and inconsistencies. I refactored the schema by creating separate tables for categories and units, then implemented foreign key relationships to link them to the inventory table. I also added constraints and indexes to enforce data integrity and improve query perfor...
+    </div>
+
+    <h2 id="video">📹 Enhancement Video Presentation</h2>
+    <div class="card">
+      <p>The video below walks through my enhancement process in detail. It explains the technical improvements I made and how they contribute to a better user experience.</p>
+      <div class="video-section">
+        <!-- Replace the URL below with your actual YouTube video link -->
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" allowfullscreen></iframe>
+      </div>
+    </div>
   </main>
 </body>
 </html>
