@@ -1,4 +1,4 @@
-# CS499 Computer Science Capstone 22EW4  
+# CS499 Computer Science Capstone   
 **April, 2022**
 
 
