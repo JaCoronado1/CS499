@@ -1,13 +1,6 @@
 # CS499 Computer Science Capstone 22EW4  
 **April, 2022**
 
-![GitHub Pages](https://img.shields.io/badge/page%20builder-GitHub%20Pages-orange)
-![Language](https://img.shields.io/badge/language-Markdown%20%7C%20HTML-cyan)
-![GitHub Desktop](https://img.shields.io/badge/collaboration%20tool-GitHub%20Desktop-purple)
-![Editor](https://img.shields.io/badge/editor-Android%20Studio-blueviolet)
-![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen)
-
----
 
 ## Overview
 
@@ -21,31 +14,15 @@ The ePortfolio reflects my ability to build, refactor, and improve applications 
 
 ## 🛠️ Project Enhancements
 
-### ✅ Enhancement 1: UI Redesign and Navigation Structure
-- **Goal**: Improve the user experience by restructuring the app’s navigation system and updating the UI components.
-- **Details**: Implemented bottom navigation, updated color schemes, and used modern Android design patterns to improve accessibility and app flow.
+### Enhancement 1: UI Redesign and Navigation Structure
 
-### ✅ Enhancement 2: Inventory Tracking Logic Optimization
-- **Goal**: Enhance the logic behind food item tracking to reduce redundancy and improve performance.
-- **Details**: Refactored item data handling using efficient SQLite queries and data binding, enabling faster updates and improved sorting/filtering of inventory items.
 
-### ✅ Enhancement 3: Data Persistence and Expiration Alerts
-- **Goal**: Add user-focused functionality by tracking expiration dates and providing alerts.
-- **Details**: Integrated a date picker, stored expiration dates in the database, and added automatic notifications to alert users when items are nearing expiration.
+###  Enhancement 2: Inventory Tracking Logic Optimization
 
----
 
-## 📁 Technologies Used
+### Enhancement 3: Data Persistence and Expiration Alerts
 
-- **Java**
-- **Android Studio**
-- **SQLite**
-- **XML (UI Layouts)**
-- **Git & GitHub**
 
----
-
-## 🎓 Capstone Objective Alignment
 
 Each enhancement supports key capstone learning outcomes:
 - **Software engineering and system design**
