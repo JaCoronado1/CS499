@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +8,6 @@
   <title>Julia Coronado | CS-499 Capstone ePortfolio</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-
-
 
   <style>
     body {
@@ -103,16 +100,19 @@
     <h1>CS-499 ePortfolio</h1>
     <p><strong>Want to see what I'm building next? Bookmark this page and check back for new updates!</strong></p>
   </header>
+
   <main>
     <h2>Introduction</h2>
     <div class="card">
       <p>My name is Julia Coronado, and I began my journey in the Computer Science program at Southern New Hampshire University in 2021. This GitHub Pages site showcases the projects I’ve completed throughout the program, including a featured final project enhanced through thoughtful design and code improvements that reflect the skills I’ve developed along the way.</p>
     </div>
 
-    <h2> Click the link below to access the original artifact for my Food Inventory Application project:</h2>
-    <a href="https://github.com/JaCoronado1/CS360.git" target="_blank">
-  View My Artifact Repository
-</a>
+    <h2>Click the link below to access the original artifact for my Food Inventory Application project:</h2>
+    <p>
+      <a href="https://github.com/JaCoronado1/CS360.git" target="_blank" rel="noopener noreferrer">
+        View My Artifact Repository
+      </a>
+    </p>
 
     <h2>Navigation</h2>
     <nav>
@@ -124,26 +124,27 @@
       </ul>
     </nav>
 
- 
-
-
     <h2>Enhancements Narrative</h2>
 
-    <div class="card" id="design-enhancement">
+    <section class="card" id="design-enhancement">
       <h3>🎯 Software Design and Engineering Enhancement</h3>
-      <a href = "https://github.com/JaCoronado1/Enhancement--1-.git" target="_blank"</a>
-      <p>To improve the structure and maintainability of my food inventory application, I applied software design and engineering principles to refactor and organize the codebase. Initially, much of the business logic, UI interaction, and data handling were all contained within a single activity, leading to tightly coupled and hard-to-maintain code. I redesigned the project using the Model-View-Controller (MVC) architecture, separating data handling from the user interface and core logic. I also creat...
-    </div>
+      <p>
+        <a href="https://github.com/JaCoronado1/Enhancement--1-.git" target="_blank" rel="noopener noreferrer">
+          View the Design Enhancement Repository
+        </a>
+      </p>
+      <p>To improve the structure and maintainability of my food inventory application, I applied software design and engineering principles to refactor and organize the codebase. Initially, much of the business logic, UI interaction, and data handling were all contained within a single activity, leading to tightly coupled and hard-to-maintain code. I redesigned the project using the Model-View-Controller (MVC) architecture, separating data handling from the user interface and core logic. I also created reusable helper classes and modular components to improve readability and scalability, making the application easier to update and maintain in the future.</p>
+    </section>
 
-    <div class="card" id="algo-enhancement">
+    <section class="card" id="algo-enhancement">
       <h3>⚙️ Algorithms and Data Structures Enhancement</h3>
-      <p>The original application used simple, linear search techniques to filter and sort inventory items. As the dataset grew, performance issues began to emerge. To address this, I optimized the expiration check algorithm by pre-sorting inventory data by date and applying a sliding window filter to focus only on soon-to-expire items. I also introduced a HashMap to categorize and retrieve items more efficiently based on their properties, allowing for constant-time access. These enhancements reduced th...
-    </div>
+      <p>The original application used simple, linear search techniques to filter and sort inventory items. As the dataset grew, performance issues began to emerge. To address this, I optimized the expiration check algorithm by pre-sorting inventory data by date and applying a sliding window filter to focus only on soon-to-expire items. I also introduced a HashMap to categorize and retrieve items more efficiently based on their properties, allowing for constant-time access. These enhancements reduced the application's load time and significantly improved user experience when managing large inventories.</p>
+    </section>
 
-    <div class="card" id="db-enhancement">
+    <section class="card" id="db-enhancement">
       <h3>🗄️ Database Enhancement</h3>
-      <p>To strengthen the application’s data layer, I redesigned the SQLite database schema for better normalization and scalability. The original design stored category and unit data directly in the items table, which risked data redundancy and inconsistencies. I refactored the schema by creating separate tables for categories and units, then implemented foreign key relationships to link them to the inventory table. I also added constraints and indexes to enforce data integrity and improve query perfor...
-    </div>
+      <p>To strengthen the application’s data layer, I redesigned the SQLite database schema for better normalization and scalability. The original design stored category and unit data directly in the items table, which risked data redundancy and inconsistencies. I refactored the schema by creating separate tables for categories and units, then implemented foreign key relationships to link them to the inventory table. I also added constraints and indexes to enforce data integrity and improve query performance, making the database structure more robust and efficient for future expansion.</p>
+    </section>
 
     <h2 id="video">📹 Enhancement Video Presentation</h2>
     <div class="card">
