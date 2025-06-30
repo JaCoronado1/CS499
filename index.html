@@ -159,7 +159,15 @@ These changes have made a big difference. The app is more stable, easier to work
       <a href="https://github.com/JaCoronado1/Enhancement-2-.git" target="_blank" rel="noopener noreferrer">
           View the Algorithms and Data Structures Enhancement Repository
         </a>
-      <p>The original application used simple, linear search techniques to filter and sort inventory items. As the dataset grew, performance issues began to emerge. To address this, I optimized the expiration check algorithm by pre-sorting inventory data by date and applying a sliding window filter to focus only on soon-to-expire items. I also introduced a HashMap to categorize and retrieve items more efficiently based on their properties, allowing for constant-time access. These enhancements reduced the application's load time and significantly improved user experience when managing large inventories.</p>
+      <p>In the original version of the application, I used basic linear search methods to filter and sort inventory items. This worked fine when the inventory was small, but as the number of items grew, the app started to slow down. Load times increased, and the overall performance became less reliable, especially when working with a larger dataset.
+
+To improve efficiency, I focused on optimizing the way expiration dates were checked. I reorganized the inventory data by sorting items based on their expiration dates. This allowed the app to scan only the items that were most relevant instead of looping through everything. I applied a sliding window approach to limit the focus to items that were about to expire, which helped cut down on unnecessary processing.
+
+I also added a HashMap to organize items based on key properties like category and name. This gave the application the ability to retrieve specific items much faster using constant time lookups. Instead of searching through the entire list every time, the app could now jump straight to what it needed.
+
+These updates significantly improved the performance of the app. Load times dropped, and users can now filter and sort their inventory quickly, even when managing a large number of items. The app feels faster and more responsive, and the improvements made it much easier to scale in the future without sacrificing user experience.
+
+</p>
     </section>
 
     <section class="card" id="db-enhancement">
