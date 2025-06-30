@@ -141,7 +141,17 @@
           View the Design Enhancement Repository
         </a>
       </p>
-      <p>To improve the structure and maintainability of my food inventory application, I applied software design and engineering principles to refactor and organize the codebase. Initially, much of the business logic, UI interaction, and data handling were all contained within a single activity, leading to tightly coupled and hard-to-maintain code. I redesigned the project using the Model-View-Controller (MVC) architecture, separating data handling from the user interface and core logic. I also created reusable helper classes and modular components to improve readability and scalability, making the application easier to update and maintain in the future.</p>
+      <p>To improve the structure and maintainability of my food inventory application, I focused on applying software design and engineering principles that helped me clean up and organize the code. In the beginning, most of the functionality was packed into a single activity. This made the app harder to manage, especially as I started adding more features. Everything from handling data to updating the user interface and processing input was all in one place, which created a lot of unnecessary complexity.
+
+I decided to refactor the project by separating the different responsibilities across multiple classes. I created helper classes to manage database operations, which allowed me to move those tasks out of the main activity. This made the code easier to read, troubleshoot, and update when needed. It also gave the project a much better structure that can support future improvements without causing conflicts or confusion.
+
+One of the biggest improvements I made was updating the user interface. I redesigned the way inventory items are displayed by creating a custom adapter. This allowed me to have full control over how each item appears in the list. Now, each item shows a clear name and quantity label in a consistent format, making the display cleaner and easier for users to understand. I also cleaned up the layout files, renamed UI elements for better clarity, and made sure that all screens followed a consistent design.
+
+Instead of repeating code for common elements, I created reusable components that handle shared tasks. This not only reduced the amount of code I had to write but also made the app easier to maintain. If I ever need to change something about how an item is shown or how input is handled, I only have to update it in one place.
+
+These changes have made a big difference. The app is more stable, easier to work with, and better prepared for future features. By organizing my code and reworking the user interface, I was able to turn a messy and fragile project into a cleaner and more professional application.
+
+</p>
     </section>
 
     <section class="card" id="algo-enhancement">
