@@ -175,7 +175,11 @@ These updates significantly improved the performance of the app. Load times drop
      <a href="https://github.com/JaCoronado1/Enhancement-3.git" target="_blank" rel="noopener noreferrer">
          View the Database Enhancement Repository
         </a>
-      <p>To strengthen the application’s data layer, I redesigned the SQLite database schema for better normalization and scalability. The original design stored category and unit data directly in the items table, which risked data redundancy and inconsistencies. I refactored the schema by creating separate tables for categories and units, then implemented foreign key relationships to link them to the inventory table. I also added constraints and indexes to enforce data integrity and improve query performance, making the database structure more robust and efficient for future expansion.</p>
+      <p>To strengthen the data layer of the application, I redesigned the SQLite database to support better organization, accuracy, and long term growth. The original setup stored category names and units directly inside the main inventory table. This approach made it easy to start with, but as the data grew, it caused repeated values and made the system more prone to mistakes and inconsistencies.
+
+To improve this, I separated the categories and units into their own tables. I then connected them to the inventory table using foreign keys. This change helped organize the data more clearly and made the relationships between items much easier to manage. By removing the repeated fields and relying on linked tables, I was able to reduce redundancy and make updates simpler and more accurate.
+
+I also added rules to protect data integrity and set up indexes to improve the speed of common searches. These updates made it easier and faster to retrieve information from the database. As a result, the app now performs better and is built on a much more stable and flexible foundation. These changes prepare the application for future features and allow it to grow without running into performance issues or data errors.</p>
     </section>
 
     <h2 id="video">📹 Enhancement Video Presentation</h2>
